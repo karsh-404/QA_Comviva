@@ -96,7 +96,7 @@ Low Priority, low Severity Defect:-
 Defect ID: BANK_WEBSITE_ISSUE-003
 
 Descriptive Defect Name and Type:
-Incorrect Formatting of Balance Percentage - Cosmetic Defect
+Incorrect Formatting of Balance Percentage - Cosmetic/UI Defect
 
 Defect Severity:
 Low
