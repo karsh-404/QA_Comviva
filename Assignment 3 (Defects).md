@@ -27,7 +27,8 @@ Actual Result:
 After clicking on the "View Statement" option, no change occurs, and the bank statement is not displayed.
 
 Screen Prints/Logs:
-...................ss attach here
+![Screenshot1](https://github.com/karsh-404/QA_Comviva/assets/106162400/f8593122-3ba4-4412-bc9d-5d46e10f37fb)
+
 
 Additional Information:
 Browser: Google Chrome 120.10.0.0.1]
