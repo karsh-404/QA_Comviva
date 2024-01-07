@@ -16,3 +16,7 @@ The output of Assignment 4 (Cricket ScoreCard) is also given Below:-
 ![Screenshotcc3](https://github.com/karsh-404/QA_Comviva/assets/106162400/b01128fb-9dc0-443d-89a8-5d3464e2de6c)
 ![Screenshotcc4](https://github.com/karsh-404/QA_Comviva/assets/106162400/51514a26-0ca4-4913-a9eb-bac3d817688a)
 
+
+
+Assignment 3 and 4 are there in root repository (main repo page outside of src folder where readme and pom.xml exist)
+
