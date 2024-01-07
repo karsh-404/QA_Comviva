@@ -82,4 +82,49 @@ Please forward this defect report to the development team for further investigat
 
 
 
-3. Low Priority, low Severity Defect:-
+Low Priority, low Severity Defect:-
+
+Defect ID: BANK_WEBSITE_ISSUE-003
+
+Descriptive Defect Name and Type:
+Incorrect Formatting of Balance Percentage - Cosmetic Defect
+
+Defect Severity:
+Low
+
+Defect Priority:
+Low
+
+Defect Status:
+Open
+
+Detailed Description:
+On the bank website's user dashboard, next to the total balance, the system displays the percentage increase or decrease in total balance. However, there is an issue with the formatting, as the percentage sign is incorrectly positioned. Instead of showing the correct format like "7%" for a decrease in balance, it displays "%7" which is not the expected behavior.
+
+Steps to Reproduce the Defect:
+1. Log in to the bank website using valid credentials.
+2. Navigate to the user dashboard where the total balance is displayed.
+3. Observe the formatting of the percentage increase or decrease next to the total balance.
+
+Expected Result:
+The system should display the percentage increase or decrease in the format "x%" (e.g., 7% decrease).
+
+Actual Result:
+The percentage is displayed in the format "%x" (e.g., %7), which is incorrect.
+
+Screen Prints/Logs:
+![Screenshot3](https://github.com/karsh-404/QA_Comviva/assets/106162400/a222db05-e3ba-45a0-9fd5-765bf675c30f)
+
+Additional Information:
+1. Browser: Google Chrome 120.10.0.0.1
+2. Operating System: Windows 11 [Version 22631.2861]
+3. Internet Connection: Wifi
+4. Clear browser cache and cookies before reproducing the issue to eliminate caching problems.
+5. Please forward this defect report to the development team for further investigation and resolution.
+
+
+
+
+
+
+
