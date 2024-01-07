@@ -1,0 +1,42 @@
+1. Test Case ID: AMAZON_COD_001
+
+2. Test Summary: Verify the functionality of Amazon Cash on Delivery (COD) feature for a successful order placement and payment upon delivery.
+
+3.Test Steps:
+
+	=>Open the web browser (Chrome version 119.0.4844.84).
+	=>Navigate to the Amazon website (www.amazon.com).
+	=>Log in to the user account using valid credentials.
+	=>Ensure that the shipping address is correctly set up in the account.
+	=>Browse for a product eligible for Cash on Delivery.
+	=>Add the selected product to the cart.
+	=>Proceed to checkout.
+	=>Confirm the shipping address and choose Cash on Delivery as the payment method.
+	=>Complete the order by clicking on the "Place your order" button.
+	=>Note the order confirmation number.
+
+4. Prerequisites:
+
+	=>A valid Amazon user account.
+	=>A shipping address added to the account.
+	=>Internet connectivity.
+	=>Chrome browser installed with version 119.0.4844.84 (or any other browser on 	which testing is to be performed).
+	=>Browser recommended: Google Chrome (Version 119.0.4844.84).
+
+5. Test Data:
+
+	=>Amazon user account credentials.
+	=>Product eligible for Cash on Delivery.
+
+6. Expected/Intended Results:
+
+	=>The product should be successfully added to the cart.
+	=>The Cash on Delivery payment option should be available during checkout.
+	=>Order placement should be successful without any errors.
+	=>An order confirmation page should be displayed with the correct order number.
+	=>An email confirmation with the order details should be sent to the registered 	email address.
+	=>The order should be visible in the order history section of the user account.
+	=>Verify that the order is processed correctly and marked for Cash on Delivery.
+	=>Confirm that the product is delivered to the specified address within the 	estimated delivery time.
+	=>The delivery agent should collect the payment in cash upon delivery.
+	=>Ensure the order status is updated to "Delivered" after successful payment and 	delivery.
