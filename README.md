@@ -1,4 +1,5 @@
-Assignment 1 test cases and Assignment 4 (Cricket ScoreCard table data printing) are located in src/test/java.
+Assignment 1 and Assignment 4 (Cricket ScoreCard table data printing) test classes are located in src/test/java.
+Assignment 3 and 4 are there in root repository (main repo page outside of src folder where readme.md and pom.xml exist)
 
 
 
@@ -18,5 +19,5 @@ The output of Assignment 4 (Cricket ScoreCard) is also given Below:-
 
 
 
-Assignment 3 and 4 are there in root repository (main repo page outside of src folder where readme and pom.xml exist)
+
 
