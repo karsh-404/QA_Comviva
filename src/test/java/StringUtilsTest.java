@@ -1,39 +1,40 @@
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class StringUtilsTest {
 
+    private final StringUtils stringUtils = new StringUtils();
+
     @Test
     public void testReverse() {
-        StringUtils utils = new StringUtils();
-        assertEquals("olleh", utils.reverse("hello"));
-        assertEquals("", utils.reverse(""));
-        assertEquals("a", utils.reverse("a"));
+        assertEquals("nassin", stringUtils.reverse("nissan"));
+        assertEquals("mercedes", stringUtils.reverse("sedecrem"));
+        assertEquals("google", stringUtils.reverse("elgoog"));
     }
 
     @Test
     public void testIsPalindrome() {
-        StringUtils utils = new StringUtils();
-        assertTrue(utils.isPalindrome("radar"));
-        assertFalse(utils.isPalindrome("hello"));
-        assertTrue(utils.isPalindrome(""));
+        assertTrue(stringUtils.isPalindrome("civic"));
+        assertTrue(stringUtils.isPalindrome(""));
+        assertTrue(stringUtils.isPalindrome("level"));
+        assertFalse(stringUtils.isPalindrome("apple"));
+        assertFalse(stringUtils.isPalindrome("microsoft"));
     }
 
     @Test
     public void testConcatenate() {
-        StringUtils utils = new StringUtils();
-        assertEquals("HelloWorld", utils.concatenate("Hello", "World"));
-        assertEquals("ab", utils.concatenate("a", "b"));
-        assertEquals("abc", utils.concatenate("", "abc"));
+        assertEquals("ToyotaLexus", stringUtils.concatenate("Toyota", "Lexus"));
+        assertEquals("", stringUtils.concatenate("", ""));
+        assertEquals("BMW", stringUtils.concatenate("BMW", ""));
+        assertEquals("MicrosoftApple", stringUtils.concatenate("", "MicrosoftApple"));
     }
 
     @Test
     public void testCountOccurrences() {
-        StringUtils utils = new StringUtils();
-        assertEquals(2, utils.countOccurrences("hello", 'l'));
-        assertEquals(0, utils.countOccurrences("world", 'z'));
-        assertEquals(0, utils.countOccurrences("", 'a'));
+        assertEquals(1, stringUtils.countOccurrences("tesla", 'a'));
+        assertEquals(0, stringUtils.countOccurrences("jaguar", 'o'));
+        assertEquals(2, stringUtils.countOccurrences("microsoft", 'o'));
+        assertEquals(3, stringUtils.countOccurrences("canada", 'a'));
+        assertEquals(0, stringUtils.countOccurrences("toyota", 'z'));
     }
 }

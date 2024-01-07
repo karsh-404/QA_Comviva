@@ -1,56 +1,65 @@
 import org.junit.jupiter.api.Test;
-
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
-public class LibraryCatalogTest{
+public class LibraryCatalogTest {
 
     @Test
-    public void testAddBookAndGetBooks() {
-        LibraryCatalog library = new LibraryCatalog();
-        Book book1 = new Book("The Catcher in the Rye", "J.D. Salinger");
-        Book book2 = new Book("1984", "George Orwell");
-
-        // Add books to the library
-        library.addBook(book1);
-        library.addBook(book2);
-
-        // Check if getBooks returns the correct list
-        List<Book> books = library.getBooks();
-        assertEquals(2, books.size());
-        assertTrue(books.contains(book1));
-        assertTrue(books.contains(book2));
+    public void testAddBookToCatalog() {
+        LibraryCatalog catalog = new LibraryCatalog();
+        Book book = new Book("The Hobbit", "J.R.R. Tolkien");
+        catalog.addBook(book);
+        List<Book> books = catalog.getBooks();
+        assertEquals(1, books.size());
+        assertEquals("The Hobbit", books.get(0).getTitle());
     }
 
     @Test
-    public void testBorrowBook() {
-        LibraryCatalog library = new LibraryCatalog();
-        Book book = new Book("To Kill a Mockingbird", "Harper Lee");
-        library.addBook(book);
+    public void testGetBooksFromEmptyCatalog() {
+        LibraryCatalog catalog = new LibraryCatalog();
+        List<Book> books = catalog.getBooks();
+        assertTrue(books.isEmpty());
+    }
 
-        // Initially available
-        assertTrue(book.isAvailable());
+    @Test
+    public void testBorrowAvailableBook() {
+        LibraryCatalog catalog = new LibraryCatalog();
+        Book book = new Book("Harry Potter and the Philosopher's Stone", "J.K. Rowling");
+        catalog.addBook(book);
+        catalog.borrowBook("Harry Potter and the Philosopher's Stone");
+        assertFalse(catalog.getBooks().get(0).isAvailable());
+    }
 
-        // Borrow the book
-        library.borrowBook("To Kill a Mockingbird");
-        assertFalse(book.isAvailable());
+    @Test
+    public void testBorrowUnavailableBook() {
+        LibraryCatalog catalog = new LibraryCatalog();
+        Book book = new Book("The Lion, the Witch and the Wardrobe", "C.S. Lewis");
+        catalog.addBook(book);
+        catalog.borrowBook("The Lion, the Witch and the Wardrobe");
+        assertFalse(catalog.getBooks().get(0).isAvailable());
+        // Attempt to borrow again should not change availability
+        catalog.borrowBook("The Lion, the Witch and the Wardrobe");
+        assertFalse(catalog.getBooks().get(0).isAvailable());
     }
 
     @Test
     public void testReturnBook() {
-        LibraryCatalog library = new LibraryCatalog();
-        Book book = new Book("The Great Gatsby", "F. Scott Fitzgerald");
-        library.addBook(book);
-
-        // Set book as unavailable
-        book.setAvailable(false);
-        assertFalse(book.isAvailable());
-
-        // Return the book
-        library.returnBook("The Great Gatsby");
-        assertTrue(book.isAvailable());
+        LibraryCatalog catalog = new LibraryCatalog();
+        Book book = new Book("Alice's Adventures in Wonderland", "Lewis Carroll");
+        catalog.addBook(book);
+        catalog.borrowBook("Alice's Adventures in Wonderland");
+        assertFalse(catalog.getBooks().get(0).isAvailable());
+        catalog.returnBook("Alice's Adventures in Wonderland");
+        assertTrue(catalog.getBooks().get(0).isAvailable());
     }
 
-    // Additional tests can be added to cover more scenarios as needed.
+    @Test
+    public void testReturnUnavailableBook() {
+        LibraryCatalog catalog = new LibraryCatalog();
+        Book book = new Book("Peter Pan", "J.M. Barrie");
+        catalog.addBook(book);
+        // Attempt to return an already available book should not change availability
+        catalog.returnBook("Peter Pan");
+        assertTrue(catalog.getBooks().get(0).isAvailable());
+    }
 }
