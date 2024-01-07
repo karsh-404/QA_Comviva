@@ -20,7 +20,7 @@
 	=>A valid Amazon user account.
 	=>A shipping address added to the account.
 	=>Internet connectivity.
-	=>Chrome browser installed with version 119.0.4844.84 (or any other browser on 	which testing is to be performed).
+	=>Chrome browser installed with version 119.0.4844.84 (or any other browser on 	which testing is to be 		performed).
 	=>Browser recommended: Google Chrome (Version 119.0.4844.84).
 
 5. Test Data:
@@ -34,9 +34,9 @@
 	=>The Cash on Delivery payment option should be available during checkout.
 	=>Order placement should be successful without any errors.
 	=>An order confirmation page should be displayed with the correct order number.
-	=>An email confirmation with the order details should be sent to the registered 	email address.
+	=>An email confirmation with the order details should be sent to the registered email address.
 	=>The order should be visible in the order history section of the user account.
 	=>Verify that the order is processed correctly and marked for Cash on Delivery.
-	=>Confirm that the product is delivered to the specified address within the 	estimated delivery time.
+	=>Confirm that the product is delivered to the specified address within the estimated delivery time.
 	=>The delivery agent should collect the payment in cash upon delivery.
-	=>Ensure the order status is updated to "Delivered" after successful payment and 	delivery.
+	=>Ensure the order status is updated to "Delivered" after successful payment and delivery.
