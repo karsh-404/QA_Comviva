@@ -1,4 +1,4 @@
-1. High Priority, high Severity Defect:-
+High Priority, high Severity Defect:-
 
 Defect ID: BANK_WEBSITE_ISSUE-001
 
@@ -18,9 +18,9 @@ Detailed Description:
 Upon attempting to open the "View Statement" option on the bank website, users encounter an issue where nothing happens. The expected behavior is to display the bank statement. However, after clicking on the "View Statement" option, the page remains unchanged, and the statement is not displayed.
 
 Steps to Reproduce the Defect:
-Log in to the bank website using valid credentials.
-Locate the "View Statement" option for a user account.
-Click on the "View Statement" option.
+1. Log in to the bank website using valid credentials.
+2. Locate the "View Statement" option for a user account.
+3. Click on the "View Statement" option.
 
 Expected Result:
 The system should display the bank statement for the selected account.
@@ -32,15 +32,15 @@ Screen Prints/Logs:
 ![Screenshot1](https://github.com/karsh-404/QA_Comviva/assets/106162400/f8593122-3ba4-4412-bc9d-5d46e10f37fb)
 
 Additional Information:
-Browser: Google Chrome 120.10.0.0.1
-Operating System: Windows 11 [Version 22631.2861]
-Internet Connection: Wi-Fi
-Clear browser cache and cookies before reproducing the issue to eliminate caching problems.
-Please forward this defect report to the development team for further investigation and resolution.
+1. Browser: Google Chrome 120.10.0.0.1
+2. Operating System: Windows 11 [Version 22631.2861]
+3. Internet Connection: Wi-Fi
+4. Clear browser cache and cookies before reproducing the issue to eliminate caching problems.
+5. Please forward this defect report to the development team for further investigation and resolution.
 
 
 
-2. Medium Priority, medium Severity Defect:-
+Medium Priority, medium Severity Defect:-
 
 Defect ID: BANK_WEBSITE_ISSUE-002
 
